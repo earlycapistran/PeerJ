@@ -1,0 +1,78 @@
+# =============================================================================
+# Datasets and R code
+# Supporting Information for Early-Capistrán et al. (2020), PeerJ
+# earlycapistran@gmail.com - October 2019
+# =============================================================================
+
+VARIABLE DEFINITIONS:
+
+fisherCode: Cryptic indicator of contributor
+
+cpueYear: Year for which average CPUE is described
+
+yearSerial: cpueYear as a serialised value
+
+birthDate: Contributor's year of birth
+
+fishingDates: Interval of dates working in the green turtle fishery
+
+experience: Years of experience in the green turtle fishery (ordinal)
+    1 = 1-5 years
+    2 = 6-10 yeas
+    3 = 11-15 years
+
+generation: Category of cohorts of fishers define based on the fishery stages in 
+which the contributor worked
+    1 = Fishers who worked in initial development and overfishing stages 
+    2 = Fishers who worked during the collapse stage
+    3 = Fishers who worked through all stages
+
+rawCpue: Average number of turtles caught in one night (approx. 12 hours) during 
+cpueYear (unstandardised).
+
+logRawCpue: Log-transformed raw CPUE
+
+stCpue: Standardized value for average number of turtles caught in one night 
+(approx. 12 hours) during cpueYear.
+
+stage: Stages of the green turtle fishery
+    1 = Initial development 
+    2 = Commercial fishing (harpoon)
+    3 = Commercial fishing (drift nets)
+    4 = Collapse
+
+gear: Fishing gear used (ordinal)
+    1 = Harpoon
+    2 = Short set net (⁓100m )
+    3 = Long set net (⁓200m)
+
+vesselType: Type of vessel used (ordinal)
+    1 = Wooden canoe (12-15 ft length)
+    2 = Fiberglass panga (20-22 ft length)
+    3 = Boat (variable length)
+	
+vesselCapacity: Gross vessel tonnage for vesselType (ordinal)
+    1 = Less than 1 tonne
+    2 = 1-1.5 tonnes
+    3 = Greater than 1.5 tonnes
+	
+propulsion: Means of propulsion used (ordinal)
+    1 = Oars
+    2 = Motor (5-10 horse-power)
+    3 = Motor (15-40 horse-power
+
+netLength: Binned value for net length (m x 10^2) 
+    1 = Short set net (⁓100m )
+    2 = Long set net (⁓200m)
+
+numNets: Number of nets used (not assigned to captures with harpoon)
+
+harpoonSkill: Harpooner skill coefficient (Not assigned to captures with nets)
+    Percentage of success (50-99%)
+
+totalNetLength: length of nets used (m x 10^2) obtained by numNets * netLength
+
+stageString: Fishery stage as a string value
+
+totalLanding: Annual green turtle landings in BLA (tonnes/year), from Márquez 
+cited in Seminoff et al. (2008) Tortugas marinas. In Bahía de los Ángeles: recursos naturales y comunidad: línea base 2007; Danemann, G., Ezcurra, E., Eds.
